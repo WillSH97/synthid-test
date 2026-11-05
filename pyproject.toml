@@ -1,0 +1,29 @@
+[project]
+name = "synthid-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "WillSH97", email = "williamsh1997@hotmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "accelerate>=1.15.0",
+    "nvidia-cudnn-cu12>=9.28.0.42",
+    "nvidia-nccl-cu12>=2.32.3",
+    "tokenizers>=0.23.3",
+    "torch>=2.15.0",
+    "transformers>=4.44.2",
+]
+
+[project.scripts]
+synthid-test = "synthid_test:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+]
