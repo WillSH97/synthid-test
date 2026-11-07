@@ -11,6 +11,7 @@ dependencies = [
     "accelerate>=1.15.0",
     "nvidia-cudnn-cu12>=9.28.0.42",
     "nvidia-nccl-cu12>=2.32.3",
+    "streamlit>=1.67.0",
     "tokenizers>=0.23.3",
     "torch>=2.15.0",
     "transformers>=4.44.2",
