@@ -80,7 +80,7 @@ max_tokens = st.slider("Max new tokens", 16, 256, 128, step=16)
 
 if st.button("generate"):
     with st.spinner("Generating..."):
-        st.session_state.classif_text = generate_watermarked_text(f"generate a prompt that is {max_tokens} words long", max_tokens)
+        st.session_state.classif_text = generate_watermarked_text(f"generate a random example text that is {max_tokens} words long", max_tokens)
 
 st.text_area("classification_text", key="classif_text")
 
